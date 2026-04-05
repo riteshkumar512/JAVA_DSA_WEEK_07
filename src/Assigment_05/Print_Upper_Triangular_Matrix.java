@@ -1,27 +1,36 @@
-package Lecture_12;
+package Assigment_05;
 
 import java.util.Scanner;
 
-public class Input_output_2D_array {
+public class Print_Upper_Triangular_Matrix {
     public static void main(String[] args) {
+        //INput
         Scanner sc=new Scanner(System.in);
-        int n= sc.nextInt();//row
-        int m= sc.nextInt();//column
-        int[][] arr=new int[n][m];
+        int n=sc.nextInt();
+        int [][] arr=new int[n][n];
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[0].length; j++) {
                 arr[i][j]=sc.nextInt();
             }
         }
-        Display(arr);
-
-    }
-    public static void Display(int[][] arr){
+        //Output
+        for (int i = 0; i < arr.length; i++) {
+            MakingZero(arr[i],i);
+        }
+        //Print
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[0].length; j++) {
                 System.out.print(arr[i][j]+" ");
             }
             System.out.println();
+        }
+
+    }
+    //Method
+    public static void MakingZero(int[] arr ,int i){
+        while (i>0){
+            arr[i-1]=0;
+            i--;
         }
     }
 }

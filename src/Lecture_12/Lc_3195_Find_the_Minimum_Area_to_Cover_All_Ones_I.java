@@ -1,7 +1,7 @@
 package Lecture_12;
 
 public class Lc_3195_Find_the_Minimum_Area_to_Cover_All_Ones_I {
-    static void main(String[] args) {
+   public static void main(String[] args) {
         int[][] grid={{0,1,0},{1,0,1}};
         System.out.println(Minimum_Area(grid));
 

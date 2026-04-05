@@ -3,7 +3,7 @@ package Assignment_04_Doubt;
 import java.util.Scanner;
 
 public class Help_Ramu {
-    static void main() {
+     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
         while (t-- > 0) {

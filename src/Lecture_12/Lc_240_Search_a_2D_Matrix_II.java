@@ -1,9 +1,9 @@
 package Lecture_12;
 
 public class Lc_240_Search_a_2D_Matrix_II {
-    static void main(String[] args) {
+    public static void main(String[] args) {
         int [][]matrix = {{1,4,7,11,15},{2,5,8,12,19},{3,6,9,16,22},{10,13,14,17,24},{18,21,23,26,30}};
-        int target=25;
+        int target=24;
         System.out.println(Search(matrix,target));
     }
     public static boolean Search(int[][] matrix,int target){
